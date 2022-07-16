@@ -72,3 +72,9 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 
 ## Architecture Explanation
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+
+The overall application can fit into 14Gb or RAM and actually fits in just 1 vCPU, this means it also doesnt require up to or more than 4 vCPUs, neither does it require an underlying control of the systems configurations.
+
+It is easier to scale using App services and less time consuming, unlike the the obvious lift and Shift in this case, taking for instance on a holiday case, where more neighbors or communities are readily available to register a conference, it could easily be scaled out to accomodate more VM instances.
+
+The presence of the built in bindings to communicate with other services or resources, makes it stand out.
